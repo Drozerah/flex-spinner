@@ -1,0 +1,23 @@
+{
+  "name": "flex-spinner",
+  "version": "1.0.0",
+  "description": "> usage",
+  "main": "app.js",
+  "bin": {
+    "flex-spinner": "prepare.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drozerah/dev-prototype.git"
+  },
+  "keywords": [],
+  "author": "Thomas G. aka Drozerah <drozerah@gmail.com> (https://github.com/Drozerah)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drozerah/dev-prototype/issues"
+  },
+  "homepage": "https://github.com/Drozerah/dev-prototype#readme"
+}
