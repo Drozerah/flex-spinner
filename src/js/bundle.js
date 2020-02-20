@@ -29,7 +29,6 @@ button.addEventListener('click', (e) => {
  * @description - This class instanciate a loading spinner element
  */
 class Spinner {
-    
   /**
    * @constructs Spinner
    * @param  {Object} spinner - The DOM element to instanciate
@@ -37,9 +36,9 @@ class Spinner {
    * @property {Array<boolean>} _isRotate - The Array of validator operations results
    * @description - This class instanciate a loading spinner element
    */
-  constructor(spinner){
-      this._spinner = spinner
-      this._isRotate = false
+  constructor (spinner) {
+    this._spinner = spinner
+    this._isRotate = false
   }
 
   /**
@@ -48,7 +47,7 @@ class Spinner {
    * @description - This getter is used to get the spinner state as Boolean value
    */
   get RotateState () {
-      return this._isRotate
+    return this._isRotate
   }
 
   /**
@@ -56,8 +55,8 @@ class Spinner {
    * @returns {void}
    * @description - This method is used to add the CSS class of 'rotate' to the instance
    */
-  AddClassRotate(){
-      this._spinner.classList.add('rotate')
+  AddClassRotate () {
+    this._spinner.classList.add('rotate')
   }
 
   /**
@@ -65,8 +64,8 @@ class Spinner {
    * @returns {void}
    * @description - This method is used to remove the CSS class of 'rotate' to the instance
    */
-  RemoveClassRotate(){
-      this._spinner.classList.remove('rotate')
+  RemoveClassRotate () {
+    this._spinner.classList.remove('rotate')
   }
 
   /**
@@ -74,15 +73,16 @@ class Spinner {
    * @returns {void}
    * @description - This method is used to toogle the CSS class of 'rotate' of the instance
    */
-  ToogleClassRotate(){
-      if (!this._isRotate) {
-          this.AddClassRotate() 
-      } else {
-          this.RemoveClassRotate()
-      }
-      this._isRotate = !this._isRotate
+  ToogleClassRotate () {
+    if (!this._isRotate) {
+      this.AddClassRotate()
+    } else {
+      this.RemoveClassRotate()
+    }
+    this._isRotate = !this._isRotate
   }
 }
 
 module.exports = Spinner
+
 },{}]},{},[1]);
