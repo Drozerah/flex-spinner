@@ -2,6 +2,8 @@
 
 > ES6 JS Class to add and remove a loading spinner
 
+![Spinner](https://raw.githubusercontent.com/Drozerah/MyGitHubStorage/master/gif/flex-spinner/spinner.gif)
+
 #### Built with:
 
 - Node.js
