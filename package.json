@@ -1,7 +1,7 @@
 {
   "name": "flex-spinner",
   "version": "1.0.0",
-  "description": "> usage",
+  "description": "A JS class to add and remove a loading spinner",
   "main": "app.js",
   "bin": {
     "flex-spinner": "prepare.js"
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Drozerah/dev-prototype.git"
+    "url": "git+https://github.com/Drozerah/flex-spinner.git"
   },
   "keywords": [],
   "author": "Thomas G. aka Drozerah <drozerah@gmail.com> (https://github.com/Drozerah)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Drozerah/dev-prototype/issues"
+    "url": "https://github.com/Drozerah/flex-spinner.git/issues"
   },
-  "homepage": "https://github.com/Drozerah/dev-prototype#readme"
+  "homepage": "https://github.com/Drozerah/flex-spinner.git#readme"
 }

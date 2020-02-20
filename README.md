@@ -1,7 +1,22 @@
-# Quick setup a new project
+# Loading Overlay With Spinner Element
 
-> usage
+> ES6 JS Class to add and remove a loading spinner
 
-```bash
-$ git clone https://github.com/Drozerah/dev-prototype.git myProjectName && cd myProjectName && rm -rf .git && rm README.md && node bin/prepare.js && code .
-```
+#### Built with:
+
+- Node.js
+- NPM
+- JavaScript ES6
+- HTML5
+- CSS3
+    - Flexbox
+- SCSS
+- VScode
+
+#### Author:
+
+* **Thomas G. aka Drozerah** - [Github](https://github.com/Drozerah)
+
+#### License:
+
+ISC

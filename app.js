@@ -1,48 +1,60 @@
 (() => {
 
     class Spinner {
+
         constructor(spinner){
             this._spinner = spinner
             this._isRotate = false
         }
 
-        talk(){
-            console.log(this._spinner) // !DEBUG
-        }
         /**
-        * Add Class Rotate 
-        */
-        addClassRotate(){
-            this._spinner.classList.add('rotate')
+         * Get Spinner state 
+         */
+        get RotateState () {
+            return this._isRotate
+        }
 
-        }
         /**
-        * Remove Class Rotate 
-        */
-        removeClassRotate(){
+         * Add Class Rotate 
+         */
+        AddClassRotate(){
+            this._spinner.classList.add('rotate')
+        }
+
+        /**
+         * Remove Class Rotate 
+         */
+        RemoveClassRotate(){
             this._spinner.classList.remove('rotate')
         }
+
         /**
-        * Toogle Class Rotate 
-        */
-        toogleClassRotate(){
+         * Toogle Class Rotate 
+         */
+        ToogleClassRotate(){
             if (!this._isRotate) {
-                this.addClassRotate() 
+                this.AddClassRotate() 
             } else {
-                this.removeClassRotate()
+                this.RemoveClassRotate()
             }
             this._isRotate = !this._isRotate
         }
     }
 
     // Instanciate New Spinner Element
-    const spinner = new Spinner(document.querySelector('#spinner'))
+    let NewSpinner = document.querySelector('#spinner')
+    NewSpinner = new Spinner(NewSpinner)
     const button = document.querySelector('button')
         
-    button.addEventListener('click',(e) => {
-        // Tooge Rotate
-        spinner.toogleClassRotate()
+    button.addEventListener('click', (e) => {
+        // Toogle Rotate
+        NewSpinner.ToogleClassRotate()
+        // Update button inner text
+        if (NewSpinner.RotateState) {
+            e.target.innerText = "Hide Spinner"
+        } else {
+            e.target.innerText = "Show Spinner"
+        }
     })
-
     
 })()
