@@ -54,12 +54,67 @@ body section #spinner_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding: 10px;
 }
 
 body section #spinner_container #spinner {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section #spinner_container #spinner.rotate {
+  -webkit-animation: spin 1600ms infinite linear;
+          animation: spin 1600ms infinite linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+body section #spinner_container #spinner.rotate::before {
+  --accent-color: #0AF;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border-top: 2px solid var(--accent-color);
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid var(--accent-color);
+  border-left: 2px solid transparent;
 }
 
 body section button {
