@@ -6,16 +6,16 @@ let NewSpinner = document.querySelector('#spinner')
 // Instanciate New Spinner Element
 NewSpinner = new Spinner(NewSpinner)
 // Get button element
-const button = document.querySelector('button')  
+const button = document.querySelector('button')
 button.addEventListener('click', (e) => {
-    // Toogle Rotate
-    NewSpinner.ToogleClassRotate()
-    // Update button inner text
-    if (NewSpinner.RotateState) {
-        e.target.innerText = "Hide Spinner"
-    } else {
-        e.target.innerText = "Show Spinner"
-    }
+  // Toogle Rotate
+  NewSpinner.ToogleClassRotate()
+  // Update button inner text
+  if (NewSpinner.RotateState) {
+    e.target.innerText = 'Hide Spinner'
+  } else {
+    e.target.innerText = 'Show Spinner'
+  }
 })
 
 },{"./lib/spinner":2}],2:[function(require,module,exports){
