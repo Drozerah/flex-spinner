@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A JS class to add and remove a loading spinner",
   "main": "app.js",
-  "bin": {
-    "flex-spinner": "prepare.js"
-  },
   "scripts": {
     "start": "watchify app.js -o src/js/bundle.js -v --delay 300",
     "jsdoc": "jsdoc -c jsdoc.json"
